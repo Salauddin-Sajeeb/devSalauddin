@@ -311,7 +311,7 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 2.5, duration: 0.8 }}
                 >
-                  React & Next Js Developer with MySql,PostgreSql & Mongodb Database experiences
+                  React & Next Js Developer with MySql, PostgreSql & Mongodb Database experiences
                 </motion.p>
                 
                 <motion.div 
@@ -353,7 +353,7 @@ export default function Home() {
                 <img
                 src="https://i.ibb.co.com/vvRHvfH8/Whats-App-Image-2025-10-20-at-2-24-40-AM.jpg"
                 alt="Professional developer portrait"
-                className="relative w-80 h-80 rounded-full  shadow-2xl border-4 border-white border-opacity-20
+                className="relative w-[27rem] h-[29rem] rounded-full  shadow-2xl border-4 border-white border-opacity-20
                   overflow-hidden "
                  />
 
