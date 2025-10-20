@@ -4,6 +4,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
+     "postinstall": "chmod +x node_modules/.bin/vite",
     "dev": "vite",
     "build": "vite build",
     "check": "tsc",
