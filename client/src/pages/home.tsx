@@ -60,7 +60,7 @@ const skills = {
 const projects = [
   {
     title: "(ERP) platform for education",
-    description: "Full-stack e-commerce solution with React, Node.js, and Stripe integration.",
+    description: "Full-stack e-commerce solution with React, Node.js, Mysql database. You can find login info from github readme.md",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
     technologies: ["React", "Node.js", "MySql"],
     colors: ["bg-blue-500", "bg-green-500", "bg-purple-500"],
@@ -70,7 +70,7 @@ const projects = [
   },
   {
     title: "E-commerce Platform",
-    description: "Machine learning dashboard with real-time data visualization and predictive analytics.",
+    description: "Full Stack Ecommerce website with modern dashboard to track orders. you can see dashboard login info from github readme.md",
     image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
     technologies: ["Next.js", "Python", "TensorFlow"],
     colors: ["bg-blue-500", "bg-yellow-500", "bg-red-500"],
@@ -192,13 +192,13 @@ export default function Home() {
               DevPortfolio
             </motion.div>
             
-            <ul className="hidden md:flex space-x-8">
+            <ul className="hidden md:flex space-x-8 text-white">
               {["Home", "About", "Tech Arsenal", "Portfolio", "Contact"].map((item, index) => {
                 const sectionId = item.toLowerCase().replace(" arsenal", "").replace(" ", "");
                 return (
                   <li key={item}>
                     <motion.button
-                      className={`hover:text-neon-cyan transition-colors duration-300 ${
+                      className={`hover:text-neon-cyan transition-colors duration-300 text-white ${
                         activeSection === sectionId ? "text-neon-cyan" : ""
                       }`}
                       whileHover={{ scale: 1.1 }}
@@ -288,7 +288,7 @@ export default function Home() {
                   transition={{ duration: 1 }}
                 >
                 <motion.span 
-                  className="block typewriter"
+                  className="block typewriter text-white"
                   initial={{ width: 0 }}
                   animate={{ width: "100%" }}
                   transition={{ duration: 3.5, ease: "easeInOut" }}
@@ -296,12 +296,12 @@ export default function Home() {
                     Hello, I'm
                 </motion.span>
                 <motion.span 
-                  className="text-gradient block mt-4"
+                  className="text-gradient block mt-4 py-4"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 2, duration: 0.8 }}
                   >
-                   Salauddin Ahmed
+                   Salauddin Sajeeb
                   </motion.span>
                 </motion.h1>
                 
@@ -321,7 +321,7 @@ export default function Home() {
                   transition={{ delay: 3, duration: 0.8 }}
                 >
                   <Button 
-                    className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 animate-glow"
+                    className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg font-semibold hover:scale-105 transition-transform duration-300 animate-glow text-info"
                     onClick={() => scrollToSection("portfolio")}
                   >
                     View My Work
@@ -329,7 +329,7 @@ export default function Home() {
                  <Button 
                    onClick={() => window.open("https://docs.google.com/document/d/1ADh-52leNRD8rrCJorWJyZVGNjVXGUmYCbN-mfHTolw", "_blank")}
                   variant="outline"
-                 className="px-8 py-4 glass-morphism rounded-lg font-semibold hover:bg-white hover:bg-opacity-20 transition-all duration-300"
+                 className=" px-8 py-4 bg-gradient-to-r from-blue-400 to-purple-500 glass-morphism rounded-lg font-semibold hover:scale-105 hover:bg-gradient hover:bg-opacity-20 transition-all duration-300"
                 >
                  See Resume
                  </Button>
